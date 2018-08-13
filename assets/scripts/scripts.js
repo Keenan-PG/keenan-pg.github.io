@@ -6,7 +6,6 @@ function checkMenu() {
 	if (hamburger.classList.contains("is-active")) {
 		hamburger.removeEventListener("click", openNav);
 		hamburger.addEventListener("click", closeNav);
-		main.addEventListener("click", closeNav);
 	} else if (!hamburger.classList.contains("is-active")) {
 		hamburger.removeEventListener("click", closeNav);
 		hamburger.addEventListener("click", openNav);

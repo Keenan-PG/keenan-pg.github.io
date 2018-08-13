@@ -10,11 +10,19 @@ body {
 	position: relative;
 }
 
+*:focus {
+	 outline: none;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+	color: black;
+}
+
 .flex-container {
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
-	/* flex-flow: column wrap; */=
 }
 
 .header {
@@ -66,8 +74,81 @@ body {
 }
 
 .socials {
+	padding: 15px;
 	font-size:2.5rem;
+	display:flex;
 	flex-flow: column wrap;
+}
+
+.links {
+	padding: 15px;
+	font-size:2.5rem;
+	display: inline-flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	height: 80vh;
+}
+
+.socials {
+	display: inline-flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+	align-items: space-around;
+}
+
+
+#udemy {
+	width: 3rem;
+}
+
+#rethink {
+	width: 3.5rem;
+}
+
+#wit {
+	font-size: 3rem;
+	color: #426DA9;
+}
+
+#fcc {
+	font-size: 3rem;
+	color: #006400
+}
+
+#headspace {
+	color: #f58b44;
+	font-size: 3rem;
+}
+
+#github {
+	color: #24292e;
+}
+
+.gh:hover {
+	color: #24292e;
+}
+
+#linkedin {
+	color: #0077B5;
+}
+
+.li:hover {
+	color: #0077B5;
+}
+
+#instagram {
+	background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.ig:hover {
+	background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
